@@ -170,6 +170,7 @@ public class StepDefination extends Utils {
 		  System.out.println(resourceAPI.getResource());
 		  System.out.println(resourceAPI.getResource());
 		  System.out.println(resourceAPI.getResource());
+		  System.out.println(resourceAPI.getResource());
 		   resSpec= new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
 
 		   if(method.equalsIgnoreCase("POST"))
