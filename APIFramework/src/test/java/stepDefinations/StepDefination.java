@@ -158,7 +158,7 @@ public class StepDefination extends Utils {
 		.body(data.addPlacePayLoad(name,language,address));
 
 	}
-
+  
 	@When("user calls {string} with {string} http request")
 
 	public void user_calls_with_http_request(String resource, String method) {
@@ -166,7 +166,10 @@ public class StepDefination extends Utils {
 		  APIResources resourceAPI=APIResources.valueOf(resource);
 
 		  System.out.println(resourceAPI.getResource());
-
+		  
+		  System.out.println(resourceAPI.getResource());
+		  System.out.println(resourceAPI.getResource());
+		  System.out.println(resourceAPI.getResource());
 		   resSpec= new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
 
 		   if(method.equalsIgnoreCase("POST"))
